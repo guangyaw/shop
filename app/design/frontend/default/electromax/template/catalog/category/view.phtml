@@ -1,0 +1,142 @@
+<?php
+/**
+ * Magento Enterprise Edition
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Magento Enterprise Edition License
+ * that is bundled with this package in the file LICENSE_EE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.magentocommerce.com/license/enterprise-edition
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://www.magentocommerce.com/license/enterprise-edition
+ */
+?>
+<?php
+/**
+ * Category view template
+ *
+ * @see Mage_Catalog_Block_Category_View
+ */
+function getCategoryImage(Mage_Catalog_Model_Category $category, $width, $height)
+{
+    // return when no image exists
+    if (!$category->getImage()) {
+        return false;
+    }
+
+    // return when the original image doesn't exist
+    $imagePath = Mage::getBaseDir('media') . DS . 'catalog' . DS . 'category'
+               . DS . $category->getImage();
+    if (!file_exists($imagePath)) {
+        return false;
+    }
+
+    // resize the image if needed
+    $rszImagePath = Mage::getBaseDir('media') . DS . 'catalog' . DS . 'category'
+                  . DS . 'cache' . DS . $width . 'x' . $height . DS
+                  . $category->getImage();
+    if (!file_exists($rszImagePath)) {
+        $image = new Varien_Image($imagePath);
+        $image->resize($width, $height);
+        $image->save($rszImagePath);
+    }
+
+    // return the image URL
+    return Mage::getBaseUrl('media') . '/catalog/category/cache/' . $width . 'x'
+         . $height . '/' . $category->getImage();
+}
+			$_helper    = $this->helper('catalog/output');
+			$_category  = $this->getCurrentCategory();
+			$_imgHtml   = '';
+			if ($_imgUrl = $_category->getImageUrl()) {
+				$_imgHtml = '<p class="category-image"><img src="'.$_imgUrl.'" alt="'.$this->escapeHtml($_category->getName()).'" title="'.$this->escapeHtml($_category->getName()).'" /></p>';
+				$_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
+			}
+			
+?>
+
+<div class="clear" style="clear:both"></div>
+<div class="page-title category-title">
+    <?php if($this->IsRssCatalogEnable() && $this->IsTopCategory()): ?>
+        <a href="<?php echo $this->getRssLink() ?>" class="link-rss"><?php echo $this->__('Subscribe to RSS Feed') ?></a>
+    <?php endif; ?>
+    <h1><?php echo $_helper->categoryAttribute($_category, $_category->getName(), 'name') ?></h1>
+</div>
+
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<?php if($_imgUrl): ?>
+    <?php echo $_imgHtml ?>
+<?php endif; ?>
+
+<?php if($_description=$this->getCurrentCategory()->getDescription()): ?>
+    <div class="category-description std">
+        <?php echo $_helper->categoryAttribute($_category, $_description, 'description') ?>
+    </div>
+    <?php endif; ?>
+<div class="category-display category-products">
+<?php if($this->getCurrentCategory()->hasChildren()){?>
+	<div class="page-title category-title">
+			<h2><?php echo $this->__('Shop By Category') ?></h2>
+	</div>
+<?php } 
+		$subcats =  $_category->getChildren();	
+		$subcatids=explode(",",$subcats);	
+	?>
+<?php if($_category->getChildren())	{?>
+	<?php if(count($subcatids)>2){ ?>
+	<ul class="category-list products-grid">	
+	<?php } else { ?>
+	<ul class="category-list countplus">	
+	<?php } ?>
+		<?php
+	if($_category->getIsActive()) {
+					foreach($subcatids as $subcatid){
+					$_categorysub = Mage::getModel('catalog/category')->load($subcatid);	
+						if($subcatid!="")		{
+					?>
+					<li class="category <?php echo $subcatid;?> item" style="float:left;margin-right:10px;padding:8px;margin-bottom:10px;text-align:center;height:105px;">							
+						<a href="<?php echo $_categorysub->getUrl()?>" title="<?php echo $_categorysub->getName()?>">
+						<?php if($_categorysub->getThumbnail() !="") {?>
+						
+						<img src="<?php echo Mage::getBaseUrl('media').'catalog' . DS . 'category' . DS.$_categorysub->getThumbnail() ?>" alt="<?php echo $this->escapeHtml($_categorysub->getName())?>" alt="<?php echo $this->escapeHtml($_categorysub->getName())?>" />		
+						<?php } else {?>
+						<div class="no-image"style="text-align:center;"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'wysiwyg/'.Mage::getStoreConfig('catalog/placeholder_category/placeholder_category')?>" alt="<?php echo $this->__('No Categorys Image Found')?>" width="180px"/>
+						
+						</div>
+						
+						<?php } ?>	
+						</a>
+						<div class="cat-name" style="margin-top:7px;width:140px;margin:0 auto;font-weight:bold;">
+							<a href="<?php echo $_categorysub->getUrl()?>" title="<?php echo $this->escapeHtml($_categorysub->getName())?>"><?php echo $this->escapeHtml($_categorysub->getName())?></a>
+						</div>
+					</li>
+					<?php } ?>	
+				<?php }?>
+		
+		<?php } ?>
+	</ul>	
+	<?php } ?>
+</div>
+<?php if($this->isContentMode()): ?>
+    <?php echo $this->getCmsBlockHtml() ?>
+
+<?php elseif($this->isMixedMode()): ?>
+    <?php echo $this->getCmsBlockHtml() ?>
+    <?php echo $this->getProductListHtml() ?>
+
+<?php else: ?>
+    <?php echo $this->getProductListHtml() ?>
+<?php endif; ?>

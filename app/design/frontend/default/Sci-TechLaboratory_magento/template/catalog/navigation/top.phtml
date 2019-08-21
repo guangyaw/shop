@@ -1,0 +1,16 @@
+<?php $_menu = ''?>
+<?php foreach ($this->getStoreCategories() as $_category): ?>
+    <?php $_menu .= $this->drawItem($_category) ?>
+<?php endforeach ?>
+<?php if ($_menu): ?>
+
+    <ul class="ttr_menu_items">
+
+
+        <?php $_anyActive = false; foreach ($this->getStoreCategories() as $_category) { $_anyActive = $_anyActive || $this->isCategoryActive($_category); } ?>
+         <li class="ttr_menu_items_parent dropdown<?php echo !$_anyActive ? ' active' : '' ?>"><a class="ttr_menu_items_parent_link<?php echo !$_anyActive ? '_active' : '' ?>" href="<?php echo $this->getUrl('')?>"><span><?php echo $this->__('Home') ?></span></a></li> 
+    
+        <?php echo $_menu; ?>
+    </ul>
+
+<?php endif; ?>

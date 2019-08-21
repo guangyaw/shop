@@ -1,0 +1,32 @@
+<?php if($this->canShowBlock()): ?>
+<div class="ttr_block">
+  <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+  <div class="ttr_block_header">
+                  <h3 class="ttr_block_heading">
+                <?php $path = $this->getSkinUrl(); ?>
+             <img src="<?php echo $path ?>images/blockicon.png">
+             </img>
+                <?php echo $this->__('Shop By') ?>
+                           </h3>
+           </div>
+         
+  <div class="ttr_block_content">
+        <?php echo $this->getStateHtml() ?>
+        <?php if($this->canShowOptions()): ?>
+            <p class="block-subtitle"><?php echo $this->__('Shopping Options') ?></p>
+            <dl id="narrow-by-list">
+                <?php $_filters = $this->getFilters() ?>
+                <?php foreach ($_filters as $_filter): ?>
+                <?php if($_filter->getItemsCount()): ?>
+                    <dt><?php echo $this->__($_filter->getName()) ?></dt>
+                    <dd><?php echo $_filter->getHtml() ?></dd>
+                <?php endif; ?>
+                <?php endforeach; ?>
+            </dl>
+            <script type="text/javascript">decorateDataList('narrow-by-list')</script>
+        <?php endif; ?>
+  </div>
+  </div>
+
+<?php endif; ?>
+

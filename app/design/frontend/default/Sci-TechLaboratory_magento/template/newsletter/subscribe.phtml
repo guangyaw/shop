@@ -1,0 +1,32 @@
+<div class="ttr_block">
+  <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+  <div class="ttr_block_header">
+              <h3 class="ttr_block_heading">
+                <?php $path = $this->getSkinUrl(); ?>
+                <img src="<?php echo $path ?>images/blockicon.png">
+                </img>
+                              <?php echo $this->__('News Letter') ?>
+              </h3>
+  </div>
+  <div class="ttr_block_content">
+<form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="newsletter-validate-detail">
+    <div class="form-subscribe">
+        <label for="newsletter"><?php echo $this->__('Newsletter Sign-up:') ?></label>
+        <div style="margin-top:5px;" class="input-box">
+           <input type="text" name="email" id="newsletter" title="<?php echo $this->__('Sign up for our newsletter') ?>" class="input-text required-entry validate-email" />
+        </div>
+
+      <div class="actions" style="margin-top:5px;">
+        <button type="submit" title="<?php echo $this->__('Subscribe') ?>" class="button btn btn-default"><?php echo $this->__('Subscribe') ?>
+        </button>
+      </div>
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    new Varien.searchForm('newsletter-validate-detail', 'newsletter', '<?php echo $this->helper('newsletter')->__('Enter your email address') ?>');
+//]]>
+</script>
+  </div>
+</div>

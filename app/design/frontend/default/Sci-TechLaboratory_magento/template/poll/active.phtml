@@ -1,0 +1,54 @@
+<?php if(isset($poll)) : ?>
+<script type="text/javascript">
+//<![CDATA[
+    function validatePollAnswerIsSelected()
+    {
+        var options = $$('input.poll_vote');
+        for( i in options ) {
+            if( options[i].checked == true ) {
+                return true;
+            }
+        }
+        return false;
+    }
+//]]>
+</script>
+<div class="ttr_block">
+  <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+  <div class="ttr_block_header">
+              <h3 class="ttr_block_heading">
+                <?php $path = $this->getSkinUrl(); ?>
+                <img src="<?php echo $path ?>images/blockicon.png">
+                </img>
+            <?php echo $this->__('Community Poll') ?>
+              </h3>
+  </div>
+  <div class="ttr_block_content">
+    <form id="pollForm" action="<?php echo $action ?>" method="post" onsubmit="return validatePollAnswerIsSelected();">
+       
+            <p class="block-subtitle"><?php echo $this->htmlEscape($poll->getPollTitle()); ?></p>
+            <?php if( $poll_answers ): ?>
+            <ul id="poll-answers">
+                <?php foreach( $poll_answers as $answer ): ?>
+                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_<?php echo $answer->getId() ?>" value="<?php echo $answer->getAnswerId() ?>" />
+                    <span class="label"><label for="vote_<?php echo $answer->getId() ?>"><?php echo $this->htmlEscape($answer->getAnswerTitle()) ?></label></span>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+            <script type="text/javascript">decorateList('poll-answers');</script>
+            <?php endif; ?>
+            
+            <div style="float:right; margin-bottom:5px;">
+		<!--	<span class="ttr_button" onmouseout="this.className='ttr_button';" onmouseover="this.className='ttr_button_hover1';"> -->
+			<input type="submit" class="btn btn-default" value="<?php echo $this->__('Vote')?>">
+		<!--	</span> -->
+              <div style="clear:both;"></div>
+			</div>
+                
+            
+    </form>
+  </div>
+</div>
+<?php endif; ?>
+ 

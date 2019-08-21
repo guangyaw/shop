@@ -1,0 +1,298 @@
+<?php global $magmenu,$horzmenu,$click,$stretch;
+$magmenu = false; 
+$horzmenu = false; 
+$stretch = false; 
+$click = false;  ?>
+<?php $path = $this->getSkinUrl(); ?>
+<div class="totopshow">
+<a href="#" class="back-to-top"><img alt="Back to Top" src="<?php echo $path?>/images/gototop.png"/></a>
+</div>
+<div id="ttr_page" class="container">
+<div class="ttr_banner_menu">
+<?php $column1 = $this->getChildHtml('menuabovecolumn1'); ?>
+<?php $column2 = $this->getChildHtml('menuabovecolumn2'); ?>
+<?php $column3 = $this->getChildHtml('menuabovecolumn3'); ?>
+<?php $column4 = $this->getChildHtml('menuabovecolumn4'); ?>
+<?php
+if( !empty($column1) || !empty($column2) || !empty($column3) || !empty($column4)):
+?>
+<div class="ttr_banner_menu_inner_above0">
+<?php if(!empty($column1)): ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('menuabovecolumn1'); ?>
+</div>
+<?php else: ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column2)): ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('menuabovecolumn2'); ?>
+</div>
+<?php else: ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<?php if(!empty($column3)): ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('menuabovecolumn3'); ?>
+</div>
+<?php else: ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column4)): ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('menuabovecolumn4'); ?>
+</div>
+<?php else: ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="clearfix"></div>
+<?php endif; ?>
+</div>
+<nav id="ttr_menu" class="navbar-default navbar">
+   <div id="ttr_menu_inner_in">
+<div class="menuforeground">
+</div>
+<div id="navigationmenu">
+<div class="navbar-header">
+<button id="nav-expander" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+<span class="sr-only">
+</span>
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+</button>
+<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" ><img class="ttr_menu_logo" src="<?php echo $path?>/images/menulogo.png" alt="Menulogo" /></a>
+</div>
+<div class="menu-center collapse navbar-collapse">
+<ul class="ttr_menu_items nav navbar-nav navbar-right">
+<?php  echo $this->getChildHtml('topMenu') ?>
+<?php $path = $this->getSkinUrl(); ?>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+<div class="ttr_banner_menu">
+<?php $column1 = $this->getChildHtml('menubelowcolumn1'); ?>
+<?php $column2 = $this->getChildHtml('menubelowcolumn2'); ?>
+<?php $column3 = $this->getChildHtml('menubelowcolumn3'); ?>
+<?php $column4 = $this->getChildHtml('menubelowcolumn4'); ?>
+<?php
+if( !empty($column1) || !empty($column2) || !empty($column3) || !empty($column4)):
+?>
+<div class="ttr_banner_menu_inner_below0">
+<?php if(!empty($column1)): ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('menubelowcolumn1'); ?>
+</div>
+<?php else: ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column2)): ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('menubelowcolumn2'); ?>
+</div>
+<?php else: ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<?php if(!empty($column3)): ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('menubelowcolumn3'); ?>
+</div>
+<?php else: ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column4)): ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('menubelowcolumn4'); ?>
+</div>
+<?php else: ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="clearfix"></div>
+<?php endif; ?>
+</div>
+<div class="ttr_banner_slideshow">
+<?php $column1 = $this->getChildHtml('slideshowabovecolumn1'); ?>
+<?php $column2 = $this->getChildHtml('slideshowabovecolumn2'); ?>
+<?php $column3 = $this->getChildHtml('slideshowabovecolumn3'); ?>
+<?php $column4 = $this->getChildHtml('slideshowabovecolumn4'); ?>
+<?php
+if( !empty($column1) || !empty($column2) || !empty($column3) || !empty($column4)):
+?>
+<div class="ttr_banner_slideshow_inner_above0">
+<?php if(!empty($column1)): ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('slideshowabovecolumn1'); ?>
+</div>
+<?php else: ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column2)): ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('slideshowabovecolumn2'); ?>
+</div>
+<?php else: ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<?php if(!empty($column3)): ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('slideshowabovecolumn3'); ?>
+</div>
+<?php else: ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column4)): ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('slideshowabovecolumn4'); ?>
+</div>
+<?php else: ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="clearfix"></div>
+<?php endif; ?>
+</div>
+<div class="ttr_slideshow">
+<div id="ttr_slideshow_inner">
+<ul>
+<li id="Slide0" class="ttr_slide" data-slideEffect="Wipe">
+<a href="http://templatetoaster.com/"></a>
+<div class="ttr_slideshow_last">
+<div class="ttr_slideshowshape01" data-effect="Fade" data-begintime="0" data-duration="1" data-easing="linear" data-slide="None">
+<div class="html_content"><p style="margin:0.36em 0em 0.36em 1.43em;"><span style="font-family:'Fjalla One','Arial';font-weight:700;font-size:5.143em;color:rgba(254,244,226,1);background-color:transparent;">Amazing Things Come from Experimentation</span></p></div>
+</div>
+</div>
+</li>
+<li id="Slide1" class="ttr_slide" data-slideEffect="Wipe">
+<a href="http://templatetoaster.com/"></a>
+<div class="ttr_slideshow_last">
+</div>
+</li>
+<li id="Slide2" class="ttr_slide" data-slideEffect="Wipe">
+<a href="http://templatetoaster.com/"></a>
+<div class="ttr_slideshow_last">
+</div>
+</li>
+</ul>
+</div>
+<div class="ttr_slideshow_in">
+<div class="ttr_slideshow_last">
+<div class="left-button">
+</div>
+<div id="nav"></div>
+<div class="right-button">
+</div>
+</div>
+</div>
+</div>
+<div class="ttr_banner_slideshow">
+<?php $column1 = $this->getChildHtml('slideshowbelowcolumn1'); ?>
+<?php $column2 = $this->getChildHtml('slideshowbelowcolumn2'); ?>
+<?php $column3 = $this->getChildHtml('slideshowbelowcolumn3'); ?>
+<?php $column4 = $this->getChildHtml('slideshowbelowcolumn4'); ?>
+<?php
+if( !empty($column1) || !empty($column2) || !empty($column3) || !empty($column4)):
+?>
+<div class="ttr_banner_slideshow_inner_below0">
+<?php if(!empty($column1)): ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('slideshowbelowcolumn1'); ?>
+</div>
+<?php else: ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column2)): ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('slideshowbelowcolumn2'); ?>
+</div>
+<?php else: ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<?php if(!empty($column3)): ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('slideshowbelowcolumn3'); ?>
+</div>
+<?php else: ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column4)): ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('slideshowbelowcolumn4'); ?>
+</div>
+<?php else: ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="clearfix"></div>
+<?php endif; ?>
+</div>

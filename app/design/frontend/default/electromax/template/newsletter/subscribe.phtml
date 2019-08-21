@@ -1,0 +1,21 @@
+<div class="box base-mini mini-newsletter">
+  <div class="head">
+    <h4><?php echo $this->__('') ?><a name="newsletter-box"></a></h4>
+  </div>
+  <form action="<?php echo $this->getUrl('newsletter/subscriber/new') ?>" method="post" id="newsletter-validate-detail">
+    <fieldset class="content">
+    <label for="newsletter" class="newsletter_label"><?php echo $this->__('Join our newsletter') ?>:</label>
+    <div class="input-box">
+      <!-- Created for the validation error accomodation -->
+      <input name="email" type="text" id="newsletter" value="Email address" class="required-entry validate-email input-text" />
+    </div>
+    <input type="submit"  value="<?php echo $this->__('Subscribe') ?>" class="subscribeBtn"/>
+    </fieldset>
+  </form>
+</div>
+<script type="text/javascript">
+<!--
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    new Varien.searchForm('newsletter-validate-detail', 'newsletter', '<?php echo $this->helper('newsletter')->__('Enter your email address') ?>');
+//-->
+</script>

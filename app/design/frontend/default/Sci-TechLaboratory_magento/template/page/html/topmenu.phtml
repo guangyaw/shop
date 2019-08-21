@@ -1,0 +1,11 @@
+<?php $_menu = $this->getHtml('level-top') ?>
+<?php if($_menu): ?>
+
+   
+   <?php $_anyActive = false;  $_anyActive = $this->getIsActive();  ?>
+         <li class="ttr_menu_items_parent"><a class="ttr_menu_items_parent_link<?php if (Mage::helper('core/url')->getCurrentUrl() === Mage::helper('core/url')->getHomeUrl()):?>_active<?php endif;?>" href="<?php echo $this->getUrl('')?>"><span class="menuchildicon"></span><?php echo $this->__('Home') ?></a>
+           <hr class="horiz_separator" /></li>
+         <?php echo $_menu ?>
+    
+
+<?php endif  ?>

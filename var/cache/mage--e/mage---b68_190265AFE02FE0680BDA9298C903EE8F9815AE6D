@@ -1,0 +1,24 @@
+<div class="block block-leftnav">
+	<div class="block-title">
+		<strong>
+			分類		</strong>
+	</div>
+	<div class="block-content">
+		<div >
+            <ul class="sidenav-cat" id="home-side-menu">
+    			    				    					<li class="level0 nav-1">
+<a href="https://shop.twshop.asia/index.php/new-bike.html?___SID=U">
+<span>新車展示</span>
+</a>
+</li>    				    			    				    					<li class="level0 nav-2">
+<a href="https://shop.twshop.asia/index.php/accessories.html?___SID=U">
+<span>自行車配件</span>
+</a>
+</li>    				    			    				    					<li class="level0 nav-3">
+<a href="https://shop.twshop.asia/index.php/others.html?___SID=U">
+<span>其他</span>
+</a>
+</li>    				    			    		</ul>
+        </div>
+	</div>
+</div>

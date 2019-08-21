@@ -1,0 +1,123 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+
+<div class="header-container">
+    <div class="header">
+        <?php if ($this->getIsHomePage()):?>
+        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+        <?php else:?>
+        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+        
+        <?php endif?>
+        <div class="quick-access place" >
+ <p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
+ <!--button type="submit" title="Search" class="mobile_button" style="display:none"><span><span></span></span></button-->
+            <?php echo $this->getChildHtml('topSearch') ?>
+           
+            <?php echo $this->getChildHtml('topLinks') ?>
+            <!--?php echo $this->getChildHtml('store_language') ?-->
+        </div>
+        <?php echo $this->getChildHtml('topContainer'); ?>
+        <?php echo $this->getChildHtml('topMenu') ?>
+    </div>
+    
+</div>
+
+<script>selectnav('nav',{ nested: false, label: false}); </script>
+
+<!--script>
+      var navigation = responsiveNav(".nav-container");
+    </script-->
+<script>
+	jQuery(function(){
+		 jQuery.noConflict();
+    //jQuery.fn._reverse = []._reverse;
+		 jQuery('#slider').nivoSlider();
+		 
+		 jQuery('.btn-cart span span').html('');
+		 jQuery('.btn-cart').css({'width':'25px'});
+		 jQuery('.btn-cart span ').css({'background':'none','border':'none'});
+		
+		  jQuery('.link-wishlist').html('');
+		 // jQuery('.add-to-links').css({'list-style': 'none'});
+		  jQuery('.link-compare').html('');
+		  
+		  jQuery('.products-onsale').css({'width':'97%','list-style': 'none','margin-left': '0.4%'});
+		  jQuery('ul').css({'list-style': 'none'});
+		  jQuery('.category-list').css({'padding-left':'0','margin':'0'});
+		  jQuery('.nivo-controlNav').html('');
+		  
+		  if(jQuery('body').hasClass('cms-index-index')){
+			  
+						jQuery('.level0.nav-0').addClass('active');
+			  }
+			 else{
+				jQuery('.level0.nav-0').removeClass('active');
+			 } 
+		  
+		 /* jQuery('#hello').click(function(){
+		  
+		  alert('hello slider');
+		  
+		  });*/
+		  //jQuery('.link-wishlist').html('');
+		 /* alert(jQuery('.catalog-product-view').hasClass('product-view'));
+		  if(jQuery('.product-view .product-shop').hasClass('grouped-items-table')){
+			  alert('working');
+				jQuery('add-to-links').css({'margin-left':'18%'});
+			  }*/
+		  
+		/*  jQuery('#adbtn').click(function(){alert('hello btn');});
+		  console.log('value'+jQuery('.nivo-caption button').html());
+		  console.log('hello here');*/
+		  
+		 // jQuery('.add-to-links').css({'float':'left'});
+		  /*jQuery('.cat-li .firstli').css({'padding-top':'0'});Vasuki123
+		  
+		   jQuery('.cat-li .firstli').click(function(){
+			   alert('hello');
+			   })*/
+			 //var windowSize=jQuery(window).width();
+			 // alert(windowSize);
+			  /*jQuery('#nav li').click(function(){
+				  //console.log(jQuery(this).attr("class"));
+				  if(jQuery(this).hasClass("nav-0")){
+				  
+				  //alert('here');
+				  jQuery('.nav-0').addClass('active');
+				  }
+				  else{
+					  alert('else')
+					   jQuery('.nav-0').removeClass('active');
+				  }
+				  });*/
+		});
+</script>
+

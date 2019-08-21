@@ -1,0 +1,28 @@
+
+<?php $_helper = Mage::helper('catalog/category') ?>
+<?php $_categories = $_helper->getStoreCategories() ?>
+<div class="category-block">
+<p class="category-custitle"><?php echo $this->__('Categories') ?></p> 
+<?php if (count($_categories) > 0): ?>
+    <ul class="category-list">
+		
+		<?php $i =0; ?>
+        <?php foreach($_categories as $_category): ?>
+            <li class="cat-li <?php if($i == 0): ?> firstli<?php endif; ?>" >
+            <?php $i++; ?>
+                <a href="<?php echo $_helper->getCategoryUrl($_category) ?>">
+                    <?php echo $_category->getName() ?>
+                </a>
+                 <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
+                <?php $_subcategories = $_category->getChildrenCategories() ?>
+                <!--- product count under each category starts -->
+               <?php $collection = Mage::getModel('catalog/product')->getCollection()->addCategoryFilter($_category);?>
+
+				<?php echo "(".count($collection).")"; ?>
+				<!--- product count under each category ends -->
+            
+            </li>
+        <?php endforeach; ?>
+    </ul>
+<?php endif; ?>
+</div>

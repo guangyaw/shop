@@ -1,0 +1,88 @@
+<div class="clear"></div>
+<div class="best-sales">
+    <div class="best-sales-title">
+        <h2>FEATURED PRODUCTS</h2>
+        <div class="slidercontrols">
+            <a class="prev" id="prev2" href="#">Prev</a>
+            <a class="next" id="next2" href="#">Next</a>
+        </div>
+    </div>
+    
+    <div class="home-best-sellers">
+                    <div class="category-products list_carousel responsive">
+                                                <ul class="products-grid carousel hover-effect" data-carousel-prev="#prev2" data-carousel-next="#next2">
+                                            <li class="wow flipInY item first" data-wow-delay="0.2s">
+                            <a href="https://shop.twshop.asia/index.php/udy-26.html?___SID=U" title="UDY 26吋 避震變速自行車" class="productimage">
+                                <img src="https://shop.twshop.asia/media/catalog/product/cache/2/small_image/200x300/9df78eab33525d08d6e5fb8d27136e95/6/8/6800.jpg" alt="UDY 26吋 避震變速自行車" class="imgresponsive" />
+                                                            </a>
+                            <div class="product-desc-bestsales">
+                                <h3 class="panel-title product-name">
+                                    <a href="https://shop.twshop.asia/index.php/udy-26.html?___SID=U" title="UDY 26吋 避震變速自行車">
+                                        UDY 26吋 避震變速自行車                                    </a>
+                                </h3>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-8">
+                                            <span class="price">NT$6,800.00</span>                                    </span>
+                        
+        </div>
+
+                            </div>
+                            <div class="display-onhover">
+                                <div class="actions clearer">
+                                                                            <button type="button" title="加入購物車" class="button btn-cart" onclick="setLocation('https://shop.twshop.asia/index.php/checkout/cart/add/uenc/aHR0cHM6Ly9zaG9wLnR3c2hvcC5hc2lhLw,,/product/8/form_key/K2x68EwR7L3YXTLU/?___SID=U')"><span><span><i class="fa fa-shopping-cart"></i></span></span></button>
+                                                                    </div>
+                                <ul class="add-to-links">
+                                                                                                                <li>
+                                            <a title="加入比較" href="https://shop.twshop.asia/index.php/catalog/product_compare/add/product/8/uenc/aHR0cHM6Ly9zaG9wLnR3c2hvcC5hc2lhLw,,/form_key/K2x68EwR7L3YXTLU/?___SID=U" class="link-compare"><i class="fa fa-link"></i></a></li>
+                                                                            </ul>
+                                </div>
+                            </li>
+                                                    <li class="wow flipInY item last" data-wow-delay="0.7s">
+                            <a href="https://shop.twshop.asia/index.php/asama-js-272.html?___SID=U" title="ASAMA 亞瑟馬  JS-272 登山車" class="productimage">
+                                <img src="https://shop.twshop.asia/media/catalog/product/cache/2/small_image/200x300/9df78eab33525d08d6e5fb8d27136e95/p/_/p_20160226_200002.jpg" alt="ASAMA 亞瑟馬  JS-272 登山車" class="imgresponsive" />
+                                <label class="sale-label">SALE</label>                            </a>
+                            <div class="product-desc-bestsales">
+                                <h3 class="panel-title product-name">
+                                    <a href="https://shop.twshop.asia/index.php/asama-js-272.html?___SID=U" title="ASAMA 亞瑟馬  JS-272 登山車">
+                                        ASAMA 亞瑟馬  JS-272 登山車                                    </a>
+                                </h3>
+                                
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">建議售價：</span>
+                <span class="price" id="old-price-5">
+                    NT$15,200.00                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Special Price</span>
+                <span class="price" id="product-price-5">
+                    NT$15,000.00                </span>
+                </p>
+                    
+    
+        </div>
+
+                            </div>
+                            <div class="display-onhover">
+                                <div class="actions clearer">
+                                                                            <button type="button" title="加入購物車" class="button btn-cart" onclick="setLocation('https://shop.twshop.asia/index.php/checkout/cart/add/uenc/aHR0cHM6Ly9zaG9wLnR3c2hvcC5hc2lhLw,,/product/5/form_key/K2x68EwR7L3YXTLU/?___SID=U')"><span><span><i class="fa fa-shopping-cart"></i></span></span></button>
+                                                                    </div>
+                                <ul class="add-to-links">
+                                                                                                                <li>
+                                            <a title="加入比較" href="https://shop.twshop.asia/index.php/catalog/product_compare/add/product/5/uenc/aHR0cHM6Ly9zaG9wLnR3c2hvcC5hc2lhLw,,/form_key/K2x68EwR7L3YXTLU/?___SID=U" class="link-compare"><i class="fa fa-link"></i></a></li>
+                                                                            </ul>
+                                </div>
+                            </li>
+                                                    </ul>
+                    </div>
+                            </div>
+            
+        </div>
+        <div class="clear"></div>

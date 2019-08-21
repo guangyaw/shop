@@ -1,0 +1,166 @@
+<!DOCTYPE>
+<html>
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+<div class="inner-wrapper">
+<?php echo $this->getChildHtml('global_notices') ?>
+<?php echo $this->getChildHtml('header') ?>
+<div id="ttr_content_and_sidebar_container">
+<div id="ttr_sidebar_left">
+<div id="ttr_sidebar_left_margin">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<?php echo $this->getChildHtml('left') ?>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+</div>
+</div>
+<div id="ttr_content_single_sidebar_left">
+<div id="ttr_content">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<?php echo $this->getChildHtml('breadcrumbs') ?>
+<?php $column1 = $this->getChildHtml('contenttopcolumn1'); ?>
+<?php $column2 = $this->getChildHtml('contenttopcolumn2'); ?>
+<?php $column3 = $this->getChildHtml('contenttopcolumn3'); ?>
+<?php $column4 = $this->getChildHtml('contenttopcolumn4'); ?>
+<?php
+if( !empty($column1) || !empty($column2) || !empty($column3) || !empty($column4)):
+?>
+<div class="contenttopcolumn0">
+<?php if(!empty($column1)): ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('contenttopcolumn1'); ?>
+</div>
+<?php else: ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column2)): ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('contenttopcolumn2'); ?>
+</div>
+<?php else: ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<?php if(!empty($column3)): ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('contenttopcolumn3'); ?>
+</div>
+<?php else: ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column4)): ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('contenttopcolumn4'); ?>
+</div>
+<?php else: ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div style="clear:both;">
+</div>
+<div class="clearfix"></div>
+<?php endif; ?>
+<?php echo $this->getChildHtml('global_messages') ?>
+<?php echo $this->getChildHtml('content') ?>
+<div class="clearfix"></div>
+<?php $column1 = $this->getChildHtml('contentbottomcolumn1'); ?>
+<?php $column2 = $this->getChildHtml('contentbottomcolumn2'); ?>
+<?php $column3 = $this->getChildHtml('contentbottomcolumn3'); ?>
+<?php $column4 = $this->getChildHtml('contentbottomcolumn4'); ?>
+<?php
+if( !empty($column1) || !empty($column2) || !empty($column3) || !empty($column4)):
+?>
+<div class="contentbottomcolumn0">
+<?php if(!empty($column1)): ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('contentbottomcolumn1'); ?>
+</div>
+<?php else: ?>
+<div class="cell1 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column2)): ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('contentbottomcolumn2'); ?>
+</div>
+<?php else: ?>
+<div class="cell2 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<?php if(!empty($column3)): ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('contentbottomcolumn3'); ?>
+</div>
+<?php else: ?>
+<div class="cell3 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-xs-block">
+</div>
+<?php if(!empty($column4)): ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12">
+<?php echo $this->getChildHtml('contentbottomcolumn4'); ?>
+</div>
+<?php else: ?>
+<div class="cell4 col-lg-3 col-md-6 col-sm-6  col-xs-12"  style="background-color:transparent;">
+&nbsp;
+</div>
+<?php endif; ?>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div style="clear:both;">
+</div>
+<div class="clearfix"></div>
+<?php endif; ?>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;clear:both"></div>
+</div>
+</div>
+<div style="clear:both"></div>
+</div>
+<?php echo $this->getChildHtml('footer') ?>
+<?php echo $this->getChildHtml('before_body_end') ?>
+</div>
+</div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+<script type="text/javascript">
+WebFontConfig = {
+google: { families: [ 'Fjalla+One:700','Open+Sans','Open+Sans:500','PT+Sans','Open+Sans:600','Fjalla+One'] },
+};
+(function() {
+var wf = document.createElement('script');
+wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.0.31/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})();
+</script>
+</body>
+</html>

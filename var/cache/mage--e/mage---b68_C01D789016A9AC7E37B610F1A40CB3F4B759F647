@@ -1,0 +1,297 @@
+
+<div class="nav-bar">
+<!-- menu start -->
+<ul id="nav">
+<li  class="  level0"> <a href="https://shop.twshop.asia/index.php/admin/dashboard/index/key/$dashboard/index$/"   class=""><span>首頁</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>銷售</span></a>
+<ul >
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/sales_order/index/key/$sales_order/index$/"   class=""><span>訂單</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/sales_invoice/index/key/$sales_invoice/index$/"   class=""><span>發票</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/sales_shipment/index/key/$sales_shipment/index$/"   class=""><span>配送</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/sales_creditmemo/index/key/$sales_creditmemo/index$/"   class=""><span>折讓單</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/sales_transactions/index/key/$sales_transactions/index$/"   class=""><span>交易記錄</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/sales_recurring_profile/index/key/$sales_recurring_profile/index$/"   class=""><span>週期性產品 (beta)</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/sales_billing_agreement/index/key/$sales_billing_agreement/index$/"   class=""><span>付款同意書</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/checkout_agreement/index/key/$checkout_agreement/index$/"   class=""><span>條款與條件</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#"  onclick="return false" class=""><span>稅</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/tax_rule/index/key/$tax_rule/index$/"   class=""><span>管理稅務規則</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/tax_rate/index/key/$tax_rate/index$/"   class=""><span>管理稅區和稅率</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/tax_rate/importExport/key/$tax_rate/importExport$/"   class=""><span>進出口稅率</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/tax_class_customer/index/key/$tax_class_customer/index$/"   class=""><span>客戶稅別</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/tax_class_product/index/key/$tax_class_product/index$/"   class=""><span>產品稅別</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class=" active  parent level0"> <a href="#"  onclick="return false" class="active"><span>產品</span></a>
+<ul >
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/catalog_product/index/key/$catalog_product/index$/"   class=""><span>管理產品</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/catalog_category/index/key/$catalog_category/index$/"   class=""><span>管理分類</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>屬性</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/catalog_product_attribute/index/key/$catalog_product_attribute/index$/"   class=""><span>管理屬性</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/catalog_product_set/index/key/$catalog_product_set/index$/"   class=""><span>管理屬性集合</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/urlrewrite/index/key/$urlrewrite/index$/"   class=""><span>替代網址管理</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/catalog_search/index/key/$catalog_search/index$/"   class=""><span>搜尋關鍵字</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>評論與評分</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#"  onclick="return false" class=""><span>客戶評論</span></a>
+<ul >
+<li  class="  level3"> <a href="https://shop.twshop.asia/index.php/admin/catalog_product_review/pending/key/$catalog_product_review/pending$/"   class=""><span>待審評論</span></a>
+</li>
+<li  class="  last level3"> <a href="https://shop.twshop.asia/index.php/admin/catalog_product_review/index/key/$catalog_product_review/index$/"   class=""><span>所有評論</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/rating/index/key/$rating/index$/"   class=""><span>評分管理</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>標籤</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/tag/index/key/$tag/index$/"   class=""><span>所有標籤</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/tag/pending/key/$tag/pending$/"   class=""><span>待審標籤</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level1"> <a href="https://shop.twshop.asia/index.php/admin/sitemap/index/key/$sitemap/index$/"   class=""><span>Google 網站地圖</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>客戶</span></a>
+<ul >
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/customer/index/key/$customer/index$/"   class=""><span>客戶管理</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/customer_group/index/key/$customer_group/index$/"   class=""><span>客戶群組</span></a>
+</li>
+<li  class="  last level1"> <a href="https://shop.twshop.asia/index.php/admin/customer_online/index/key/$customer_online/index$/"   class=""><span>線上客戶</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>促銷</span></a>
+<ul >
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/promo_catalog/index/key/$promo_catalog/index$/"   class=""><span>產品價格規則</span></a>
+</li>
+<li  class="  last level1"> <a href="https://shop.twshop.asia/index.php/admin/promo_quote/index/key/$promo_quote/index$/"   class=""><span>購物車價格規則</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>電子報</span></a>
+<ul >
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/newsletter_template/index/key/$newsletter_template/index$/"   class=""><span>電子報樣板</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/newsletter_queue/index/key/$newsletter_queue/index$/"   class=""><span>電子報排程</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/newsletter_subscriber/index/key/$newsletter_subscriber/index$/"   class=""><span>電子報訂閱人</span></a>
+</li>
+<li  class="  last level1"> <a href="https://shop.twshop.asia/index.php/admin/newsletter_problem/index/key/$newsletter_problem/index$/"   class=""><span>電子報錯誤報告</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>靜態網頁</span></a>
+<ul >
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/cms_page/index/key/$cms_page/index$/"   class=""><span>頁面</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/cms_block/index/key/$cms_block/index$/"   class=""><span>靜態區塊</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/widget_instance/index/key/$widget_instance/index$/"   class=""><span>元素</span></a>
+</li>
+<li  class="  last level1"> <a href="https://shop.twshop.asia/index.php/admin/poll/index/key/$poll/index$/"   class=""><span>投票</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>報表</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>銷售額</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_sales/sales/key/$report_sales/sales$/"   class=""><span>訂單</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_sales/tax/key/$report_sales/tax$/"   class=""><span>傳真</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_sales/invoiced/key/$report_sales/invoiced$/"   class=""><span>已出發票</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_sales/shipping/key/$report_sales/shipping$/"   class=""><span>運送</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_sales/refunded/key/$report_sales/refunded$/"   class=""><span>退款</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_sales/coupons/key/$report_sales/coupons$/"   class=""><span>優惠券</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/paypal_reports/index/key/$paypal_reports/index$/"   class=""><span>Paypal結算報告</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>購物車</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_shopcart/product/key/$report_shopcart/product$/"   class=""><span>購物車中的產品</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/report_shopcart/abandoned/key/$report_shopcart/abandoned$/"   class=""><span>被放棄的購物車</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>產品</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_sales/bestsellers/key/$report_sales/bestsellers$/"   class=""><span>暢銷產品</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_product/sold/key/$report_product/sold$/"   class=""><span>已訂購產品</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_product/viewed/key/$report_product/viewed$/"   class=""><span>查看次數最多</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_product/lowstock/key/$report_product/lowstock$/"   class=""><span>低庫存</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/report_product/downloads/key/$report_product/downloads$/"   class=""><span>下載</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>客戶</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_customer/accounts/key/$report_customer/accounts$/"   class=""><span>新帳號</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_customer/totals/key/$report_customer/totals$/"   class=""><span>根據訂單總額排列的客戶</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/report_customer/orders/key/$report_customer/orders$/"   class=""><span>根據訂單數排列的客戶</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>標籤</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_tag/customer/key/$report_tag/customer$/"   class=""><span>客戶</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_tag/product/key/$report_tag/product$/"   class=""><span>產品</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/report_tag/popular/key/$report_tag/popular$/"   class=""><span>熱門</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>評論</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/report_review/customer/key/$report_review/customer$/"   class=""><span>客戶評論</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/report_review/product/key/$report_review/product$/"   class=""><span>產品評論</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/report/search/key/$report/search$/"   class=""><span>搜尋關鍵字</span></a>
+</li>
+<li  class="  last level1"> <a href="https://shop.twshop.asia/index.php/admin/report_statistics/index/key/$report_statistics/index$/"   class=""><span>重新整理狀態</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>系統</span></a>
+<ul >
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/system_account/index/key/$system_account/index$/"   class=""><span>我的帳號</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/notification/index/key/$notification/index$/"   class=""><span>通知</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>工具</span></a>
+<ul >
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/compiler_process/index/key/$compiler_process/index$/"   class=""><span>編譯</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>網路服務</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/api_user/index/key/$api_user/index$/"   class=""><span>SOAP/XML-RPC - 使用者</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/api_role/index/key/$api_role/index$/"   class=""><span>SOAP/XML-RPC - 角色</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/api2_role/index/key/$api2_role/index$/"   class=""><span>REST - Roles</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/api2_attribute/index/key/$api2_attribute/index$/"   class=""><span>REST - Attributes</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/oauth_consumer/index/key/$oauth_consumer/index$/"   class=""><span>REST的 -  OAuth的消費者</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/oauth_authorizedTokens/index/key/$oauth_authorizedTokens/index$/"   class=""><span>REST的 -  OAuth的授權Token</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/oauth_admin_token/index/key/$oauth_admin_token/index$/"   class=""><span>REST的 - 我的軟體</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/system_design/index/key/$system_design/index$/"   class=""><span>設計</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>匯入/匯出</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/import/index/key/$import/index$/"   class=""><span>匯入</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/export/index/key/$export/index$/"   class=""><span>匯出</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/system_convert_gui/index/key/$system_convert_gui/index$/"   class=""><span>資料流 - 設置</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/system_convert_profile/index/key/$system_convert_profile/index$/"   class=""><span>資料流 - 進階配置</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="https://shop.twshop.asia/index.php/admin/system_currency/index/key/$system_currency/index$/"   class=""><span>管理貨幣</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/system_currency/index/key/$system_currency/index$/"   class=""><span>匯率</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/system_currencysymbol/index/key/$system_currencysymbol/index$/"   class=""><span>符號</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/system_email_template/index/key/$system_email_template/index$/"   class=""><span>交易信箱</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/system_variable/index/key/$system_variable/index$/"   class=""><span>自訂變數</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>權限</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/permissions_user/index/key/$permissions_user/index$/"   class=""><span>使用者</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/permissions_role/index/key/$permissions_role/index$/"   class=""><span>角色</span></a>
+</li>
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/permissions_variable/index/key/$permissions_variable/index$/"   class=""><span>Variables</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/permissions_block/index/key/$permissions_block/index$/"   class=""><span>Blocks</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Magento 連接</span></a>
+<ul >
+<li  class="  level2"> <a href="https://shop.twshop.asia/index.php/admin/extension_local/index/key/$extension_local/index$/"   class=""><span>Magento 連接管理器</span></a>
+</li>
+<li  class="  last level2"> <a href="https://shop.twshop.asia/index.php/admin/extension_custom/index/key/$extension_custom/index$/"   class=""><span>外掛軟體包</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/cache/index/key/$cache/index$/"   class=""><span>快取管理</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/process/list/key/$process/list$/"   class=""><span>索引管理</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/system_store/index/key/$system_store/index$/"   class=""><span>管理商店</span></a>
+</li>
+<li  class="  level1"> <a href="https://shop.twshop.asia/index.php/admin/sales_order_status/index/key/$sales_order_status/index$/"   class=""><span>訂單狀態</span></a>
+</li>
+<li  class="  last level1"> <a href="https://shop.twshop.asia/index.php/admin/system_config/index/key/$system_config/index$/"   class=""><span>設定</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- menu end -->
+
+    <a id="page-help-link" href="http://merch.docs.magento.com/ce/user_guide/catalog/product-create.html">查看本頁的說明</a>
+    <script type="text/javascript">$('page-help-link').target = 'magento_page_help'</script>
+
+</div>

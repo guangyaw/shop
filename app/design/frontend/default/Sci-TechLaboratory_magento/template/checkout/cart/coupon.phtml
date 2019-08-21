@@ -1,0 +1,44 @@
+<form id="discount-coupon-form" action="<?php echo $this->getUrl('checkout/cart/couponPost') ?>" method="post">
+    <div class="ttr_post">
+        <h2><?php echo $this->__('Discount Codes') ?></h2>
+        <div class="discount-form">
+            <label for="coupon_code"><?php echo $this->__('Enter your coupon code if you have one.') ?></label>
+            <input type="hidden" name="remove" id="remove-coupone" value="0" />
+            <div class="input-box">
+                <input class="input-text" id="coupon_code" name="coupon_code" value="<?php echo $this->htmlEscape($this->getCouponCode()) ?>" />
+            </div>
+            <div class="buttons-set">
+            <div>
+		<!--	<span class="ttr_button" onmouseout="this.className='ttr_button';" onmouseover="this.className='ttr_button_hover1';" onclick="discountForm.submit(false)"> -->
+			<input type="submit" class="btn btn-default" value="<?php echo $this->__('Apply Coupon')?>" onclick="discountForm.submit(false)">
+		<!--	</span> -->
+			<div style="clear:both;"></div>
+			</div>
+                <?php if(strlen($this->getCouponCode())): ?>
+                    &nbsp; 
+					<div>
+		<!--	<span class="ttr_button" onmouseout="this.className='ttr_button';" onmouseover="this.className='ttr_button_hover1';" onclick="discountForm.submit(true)"> -->
+			<input type="submit" class="btn btn-default" value="<?php echo $this->__('Cancel Coupon')?>" onclick="discountForm.submit(true)">
+		<!--	</span> -->
+			<div style="clear:both;"></div>
+			</div>
+                <?php endif;?>
+            </div>
+        </div>
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+var discountForm = new VarienForm('discount-coupon-form');
+discountForm.submit = function (isRemove) {
+    if (isRemove) {
+        $('coupon_code').removeClassName('required-entry');
+        $('remove-coupone').value = "1";
+    } else {
+        $('coupon_code').addClassName('required-entry');
+        $('remove-coupone').value = "0";
+    }
+    return VarienForm.prototype.submit.bind(discountForm)();
+}
+//]]>
+</script>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ameex_ElectromaxTheme>
+            <version>1.0.1</version>
+        </Ameex_ElectromaxTheme>
+    </modules>
+    <global>
+		<resources>
+            <ElectromaxTheme_setup>
+                <setup>
+                    <module>Ameex_ElectromaxTheme</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </ElectromaxTheme_setup>
+        </resources>
+     </global>
+  </config>
