@@ -17,9 +17,9 @@ Default layout, loads most of the pages
         <!-- Mage_Catalog -->
         <reference name="left">
             <block type="core/template" name="left.permanent.callout" template="callouts/left_col.phtml">
-                <action method="setImgSrc"><src>images/google+.png</src></action>
-                <action method="setImgAlt" translate="alt" module="catalog"><alt>營業時間:9:00~20:00. Google+專頁 </alt></action>
-                <action method="setLinkUrl"><url>https://plus.google.com/u/0/b/103559172771220505278/?pageId=103559172771220505278</url></action>
+                <action method="setImgSrc"><src>images/blogs.png</src></action>
+                <action method="setImgAlt" translate="alt" module="catalog"><alt>營業時間:9:00~20:00. 前往部落格 </alt></action>
+                <action method="setLinkUrl"><url>https://bike.twshop.asia</url></action>
             </block>
         </reference>
         <reference name="right">
